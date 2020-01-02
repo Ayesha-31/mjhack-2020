@@ -16,6 +16,7 @@ const IndexPage = () => (
       ></script>
     </Helmet>
     <Navbar />
+    <div style={{ height: "1000px" }}></div>
   </Layout>
 )
 

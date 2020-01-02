@@ -9,6 +9,10 @@
   outline: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 100%;
   color: #000;
@@ -29,6 +33,6 @@ button {
   padding: 0 2rem;
 }
 
-.fix-body {
+.fix {
   overflow-y: hidden;
 }
