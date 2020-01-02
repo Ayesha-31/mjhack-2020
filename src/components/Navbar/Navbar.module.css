@@ -1,5 +1,5 @@
 .navbar {
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -11,7 +11,7 @@
 }
 
 .navbarLogo span {
-  font-size: 3.5rem;
+  font-size: 3rem;
   background: -webkit-linear-gradient(45deg, red, yellow);
   background-clip: text;
   -webkit-background-clip: text;
