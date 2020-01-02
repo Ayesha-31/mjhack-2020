@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./css/global.scss" />
-    <link rel="stylesheet" href="./css/index.scss" />
+    <link rel="stylesheet" href="./css/index/index.scss" />
     <script src="./js/app.js" defer></script>
     <title>MJ Hack Revolution 2020</title>
   </head>
   <body>
     <!-- Navbar -->
-    <nav role="navigation">
-      <div class="container">
+    <div class="container">
+      <nav role="navigation">
         <div class="navbar-logo">
           <span>&gt;</span>
           <span class="blink">_</span>
@@ -24,7 +24,7 @@
             width="24"
             height="24"
             fill="none"
-            id="open-drawer-button"
+            id="hamburger"
           >
             <path
               fill="currentColor"
@@ -32,9 +32,27 @@
             />
           </svg>
         </div>
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" id="cross">
+          <path fill="currentColor" d="M4 18L18 4l2 2L6 20z"></path>
+          <path fill="currentColor" d="M6 4l14 14-2 2L4 6z"></path>
+        </svg>
+      </nav>
+    </div>
+
+    <!-- Navigation Drawer -> Hidden at first -->
+    <div class="navigation-drawer">
+      <div class="container">
+        <a href="#about">About</a>
+        <a href="#sponsors">Sponsors</a>
+        <a href="#themes">Themes</a>
+        <a href="#prizes">Prizes</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#contact">Contact</a>
+        <button>Register</button>
       </div>
-    </nav>
+    </div>
 
     <!-- Hero -->
+    <div class="hero"></div>
   </body>
 </html>
