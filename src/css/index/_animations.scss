@@ -1,0 +1,71 @@
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes heading {
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes border-first {
+  100% {
+    border-color: $color-one;
+  }
+}
+
+@keyframes border-second {
+  0% {
+    border-color: $color-one;
+  }
+
+  100% {
+    border-color: transparent;
+  }
+}
+
+@keyframes text {
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes mouse-one-second {
+  100% {
+    transform: translate(-60px, -40px);
+  }
+}
+
+@keyframes mouse-two-first {
+  100% {
+    transform: translate(40px, 10px);
+  }
+}
+
+@keyframes mouse-two-second {
+  0% {
+    transform: translate(40px, 10px);
+  }
+
+  100% {
+    transform: translate(150px, -30px);
+  }
+}
+
+@keyframes mouse-three-first {
+  100% {
+    transform: translate(160px, 40px);
+  }
+}
+
+@keyframes mouse-three-second {
+  0% {
+    transform: translate(160px, 40px);
+  }
+
+  100% {
+    transform: translate(-120px, 80px);
+  }
+}
