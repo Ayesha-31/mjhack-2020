@@ -10,7 +10,7 @@ const openDrawer = () => {
 };
 
 const closeDrawer = () => {
-  navbarEnd.style.display = 'initial';
+  navbarEnd.style.display = 'flex';
   drawer.style.display = 'none';
   closeDrawerButton.style.display = 'none';
 };

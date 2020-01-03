@@ -1,3 +1,6 @@
+$white: #fff;
+$black: #000;
+
 *,
 *::before,
 *::after {
@@ -15,7 +18,7 @@ html {
 
 body {
   font-size: 100%;
-  color: #000;
+  color: $black;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -25,14 +28,15 @@ button {
   font-weight: bold;
   padding: 0.9rem 1.25rem;
   border-radius: 8px;
-  border: 2px solid #000;
-  background-color: #fff;
-  color: #000;
+  border: 2px solid $black;
+  background-color: $white;
+  color: $black;
+  cursor: pointer;
 }
 
 .container {
   width: 100%;
-  max-width: 940px;
+  max-width: 1024px;
   margin: 0 auto;
   padding: 0 2rem;
 }

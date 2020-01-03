@@ -1,14 +1,17 @@
 .hero {
   text-align: center;
+  padding: 4rem 0;
 
   h1 {
-    padding: 4rem 0;
     font-size: 3.5rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px $orange;
   }
 
   button {
-    background-color: #000;
-    color: #fff;
+    background-color: $black;
+    margin-top: 2rem;
+    color: $white;
   }
 
   .count-down {
@@ -18,15 +21,15 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-bottom: 2rem;
     background-color: rgba(199, 185, 255, 0.35);
+    margin: 2rem auto;
 
     span {
       font-size: 0.85rem;
-      color: #282828;
+      color: $light;
 
       &.time {
-        color: #000;
+        color: $black;
         font-size: 2.75rem;
         font-weight: bold;
       }
@@ -38,5 +41,28 @@
     margin-top: 1rem;
     font-weight: bold;
     font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 840px) {
+  .hero {
+    h1 {
+      text-transform: uppercase;
+      font-size: 5rem;
+    }
+
+    .count-down {
+      padding: 0.5rem 0 1.25rem 0;
+      margin: 4rem auto;
+      max-width: 550px;
+
+      span {
+        font-size: 1rem;
+
+        &.time {
+          font-size: 5rem;
+        }
+      }
+    }
   }
 }

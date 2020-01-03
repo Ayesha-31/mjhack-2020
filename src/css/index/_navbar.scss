@@ -10,7 +10,7 @@ nav {
 
     span {
       font-size: 3rem;
-      background: -webkit-linear-gradient(45deg, red, yellow);
+      background: $logo-gradient;
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -26,11 +26,15 @@ nav {
     display: flex;
     align-items: center;
 
+    .navbar-links {
+      display: none;
+    }
+
     button {
-      color: #fff;
+      color: $white;
       border: none;
       line-height: 1;
-      background: #000;
+      background: $black;
       margin-right: 1.5rem;
     }
   }
@@ -47,21 +51,21 @@ nav {
   width: 100vw;
   display: none;
   z-index: 10;
-  background-color: #fff;
+  background-color: $white;
 
   a {
     text-decoration: none;
-    color: #000;
+    color: $black;
     display: block;
     padding: 0.75rem 0;
     font-size: 1.25rem;
   }
 
   button {
-    color: #fff;
+    color: $white;
     border: none;
     line-height: 1;
-    background: #000;
+    background: $black;
     margin-top: 1rem;
   }
 }
@@ -69,5 +73,48 @@ nav {
 @keyframes blinker {
   50% {
     opacity: 0;
+  }
+}
+
+@media (min-width: 840px) {
+  nav {
+    .navbar-logo {
+      span {
+        font-size: 4rem;
+      }
+    }
+
+    .navbar-links {
+      display: flex !important;
+
+      a {
+        color: $black;
+        text-decoration: none;
+        font-size: 1.05rem;
+        margin: 0 0.85rem;
+        margin-top: 6px;
+
+        &:after {
+          content: '';
+          height: 3px;
+          margin-top: 3px;
+          display: block;
+          background: $white;
+        }
+
+        &:hover::after {
+          display: block;
+          background: $black;
+        }
+
+        &:last-of-type {
+          margin-right: 2rem;
+        }
+      }
+    }
+
+    #hamburger {
+      display: none;
+    }
   }
 }
