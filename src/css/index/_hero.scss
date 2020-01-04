@@ -162,12 +162,19 @@
   }
 }
 
+// Presenter
+.presenter-diagonal {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 100vw 0 0;
+  border-color: $white $offwhite $white $white;
+}
+
 .presenter-container {
   text-align: center;
-  background-color: $offwhite;
-  padding: 6rem 2rem !important;
-  clip-path: polygon(0 14%, 100% 0, 100% 86%, 0% 100%);
-  margin-top: 4rem !important;
+  background: $offwhite;
+  padding: 2.75rem 2rem !important;
 
   .presenters {
     display: flex;
@@ -194,5 +201,39 @@
 
   .bordered {
     margin-top: 3rem;
+  }
+}
+
+@media (min-width: 840px) {
+  .hero {
+    .heading {
+      .text {
+        line-height: 1.25;
+        font-size: 7rem;
+      }
+
+      .second-word {
+        .mouse {
+          transform: translate(200px, -100px);
+        }
+      }
+
+      .third-word {
+        .mouse {
+          transform: translate();
+        }
+      }
+    }
+
+    .location {
+      margin-top: 7rem;
+      width: 49%;
+    }
+
+    .description {
+      text-align: left;
+      display: inline-block;
+      width: 49%;
+    }
   }
 }
