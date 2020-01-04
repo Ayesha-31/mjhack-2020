@@ -117,15 +117,29 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     align-items: center;
-
-    .dot {
-      margin-top: -5px;
-    }
+    border: 2px solid $black;
+    border-radius: $border-radius;
+    width: 100%;
+    padding: 1rem;
+    background: $timer-bg;
 
     .number,
     .dot {
-      font-size: 3rem;
+      font-family: monospace;
+      font-size: 2.5rem;
       font-weight: bold;
     }
+
+    .text {
+      font-size: 0.875rem;
+    }
+  }
+
+  .btn-large {
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    background: $black;
+    color: $white;
   }
 }
