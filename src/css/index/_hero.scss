@@ -1,6 +1,6 @@
 .hero {
   text-align: center;
-  padding: 3rem 0;
+  margin: 3rem 0;
 
   .heading {
     transform: translate(0px, 10px);
@@ -27,7 +27,7 @@
     }
 
     .text {
-      font-size: 4rem;
+      font-size: 4.25rem;
       font-weight: bold;
     }
 
@@ -113,33 +113,86 @@
   }
 
   .count-down {
-    margin-top: 1.5rem;
+    margin-top: 6rem;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     align-items: center;
-    border: 2px solid $black;
+    border: 3px solid $black;
     border-radius: $border-radius;
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     background: $timer-bg;
 
     .number,
     .dot {
       font-family: monospace;
-      font-size: 2.5rem;
+      font-size: 3rem;
       font-weight: bold;
     }
 
     .text {
-      font-size: 0.875rem;
+      display: inline-block;
+      font-family: monospace;
+      color: $light;
+      margin-top: 0.25rem;
+      font-size: 0.85rem;
     }
   }
 
+  .description {
+    margin-top: 1.35rem;
+    line-height: 1.5;
+    font-size: 1.2rem;
+  }
+
   .btn-large {
-    padding: 1rem 1.5rem;
+    padding: 0.75rem 1.5rem;
     font-size: 1.25rem;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     background: $black;
     color: $white;
+  }
+
+  .event-details {
+    color: $black;
+    display: block;
+    font-weight: bold;
+    margin-top: 1.75rem;
+    font-size: 1.25rem;
+  }
+}
+
+.presenter-container {
+  text-align: center;
+  background-color: $offwhite;
+  padding: 6rem 2rem !important;
+  clip-path: polygon(0 14%, 100% 0, 100% 86%, 0% 100%);
+  margin-top: 4rem !important;
+
+  .presenters {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      flex: 1;
+
+      img {
+        max-height: 55px;
+      }
+    }
+
+    .logo-mj {
+      margin-top: -15px;
+      filter: invert(100%);
+      padding: 0 0.5rem;
+
+      img {
+        max-height: 90px;
+      }
+    }
+  }
+
+  .bordered {
+    margin-top: 3rem;
   }
 }

@@ -1,0 +1,45 @@
+.about-event {
+  background: $black;
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+  margin-top: -8rem;
+
+  * {
+    color: $white;
+  }
+
+  .height-padding {
+    padding: 1rem 0;
+  }
+
+  .content {
+    p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      line-height: 1.5;
+    }
+  }
+
+  .information {
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+    .title {
+      font-weight: bold;
+      padding-right: 1rem;
+    }
+
+    .title,
+    .text {
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+    }
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+}

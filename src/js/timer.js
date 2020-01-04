@@ -3,7 +3,7 @@ const hoursContainer = document.querySelector('#hours');
 const minutesContainer = document.querySelector('#minutes');
 const secondsContainer = document.querySelector('#seconds');
 
-const eventDate = new Date('Jan 18, 2020 07:00:00').getTime();
+const eventDate = new Date('Jan 19, 2020 07:00:00').getTime();
 
 const timer = () => {
   const currentDate = new Date().getTime();
