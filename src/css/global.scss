@@ -1,5 +1,6 @@
 $white: #fff;
 $black: #000;
+$border-radius: 8px;
 
 *,
 *::before,
@@ -28,7 +29,7 @@ button {
   font-size: 1rem;
   font-weight: bold;
   padding: 0.85rem 1rem;
-  border-radius: 8px;
+  border-radius: $border-radius;
   border: 2px solid $black;
   background-color: $white;
   color: $black;

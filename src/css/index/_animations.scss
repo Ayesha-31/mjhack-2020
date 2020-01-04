@@ -34,19 +34,19 @@
 
 @keyframes mouse-one-second {
   100% {
-    transform: translate(-60px, -40px);
+    transform: translate(-20px, -40px);
   }
 }
 
 @keyframes mouse-two-first {
   100% {
-    transform: translate(40px, 10px);
+    transform: translate(75px, 30px);
   }
 }
 
 @keyframes mouse-two-second {
   0% {
-    transform: translate(40px, 10px);
+    transform: translate(75px, 30px);
   }
 
   100% {
@@ -66,6 +66,6 @@
   }
 
   100% {
-    transform: translate(-120px, 80px);
+    transform: translate(-10px, 100px);
   }
 }

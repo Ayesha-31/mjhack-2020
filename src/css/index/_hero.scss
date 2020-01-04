@@ -54,7 +54,7 @@
       animation: text $anim-duration ease $anim * 3 forwards;
 
       .mouse {
-        transform: translate(150px, -30px);
+        transform: translate(180px, -30px);
         animation: mouse-two-first $anim-duration ease $anim * 2 forwards,
           mouse-two-second $anim-duration ease $anim * 6 forwards;
 
@@ -69,7 +69,7 @@
     }
 
     .third-word {
-      transform: translate(-180px, 70px);
+      transform: translate(-180px, 60px);
       animation: text $anim-duration ease $anim * 5 forwards;
 
       .mouse {
@@ -84,6 +84,48 @@
           background: $color-three;
         }
       }
+    }
+  }
+
+  .location {
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 5rem;
+
+    .location-date,
+    .location-place {
+      padding: 0.25rem 0;
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+
+      .icon {
+        svg {
+          width: 20px;
+        }
+      }
+
+      .text {
+        padding-left: 0.75rem;
+      }
+    }
+  }
+
+  .count-down {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+
+    .dot {
+      margin-top: -5px;
+    }
+
+    .number,
+    .dot {
+      font-size: 3rem;
+      font-weight: bold;
     }
   }
 }
