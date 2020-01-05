@@ -1,5 +1,5 @@
-// Styling for the portfolio section
-#portfolio {
+// Styling for the prizes section
+#prizes {
   .portfolio-item {
     right: 0;
     margin: 0 0 15px;
@@ -8,6 +8,7 @@
       display: block;
       max-width: 400px;
       margin: 0 auto;
+      text-align: center;
       cursor: pointer;
       .portfolio-hover {
         position: absolute;
@@ -30,6 +31,9 @@
           margin-top: -12px;
           text-align: center;
           color: white;
+          span {
+            font-weight: bold;
+          }
           i {
             margin-top: -12px;
           }

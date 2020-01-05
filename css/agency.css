@@ -227,20 +227,21 @@ header.masthead .intro-text .intro-heading {
   text-transform: none;
 }
 
-#portfolio .portfolio-item {
+#prizes .portfolio-item {
   right: 0;
   margin: 0 0 15px;
 }
 
-#portfolio .portfolio-item .portfolio-link {
+#prizes .portfolio-item .portfolio-link {
   position: relative;
   display: block;
   max-width: 400px;
   margin: 0 auto;
+  text-align: center;
   cursor: pointer;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+#prizes .portfolio-item .portfolio-link .portfolio-hover {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -249,11 +250,11 @@ header.masthead .intro-text .intro-heading {
   background: rgba(103, 176, 255, 0.9);
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+#prizes .portfolio-item .portfolio-link .portfolio-hover:hover {
   opacity: 1;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+#prizes .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -264,16 +265,20 @@ header.masthead .intro-text .intro-heading {
   color: white;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+#prizes .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content span {
+  font-weight: bold;
+}
+
+#prizes .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
   margin-top: -12px;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+#prizes .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#prizes .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
   margin: 0;
 }
 
-#portfolio .portfolio-item .portfolio-caption {
+#prizes .portfolio-item .portfolio-caption {
   max-width: 400px;
   margin: 0 auto;
   padding: 25px;
@@ -281,19 +286,19 @@ header.masthead .intro-text .intro-heading {
   background-color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-caption h4 {
+#prizes .portfolio-item .portfolio-caption h4 {
   margin: 0;
   text-transform: none;
 }
 
-#portfolio .portfolio-item .portfolio-caption p {
+#prizes .portfolio-item .portfolio-caption p {
   font-size: 16px;
   font-style: italic;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-#portfolio * {
+#prizes * {
   z-index: 2;
 }
 
@@ -598,7 +603,7 @@ section#register .form-group {
 
 section#register .form-group input,
 section#register .form-group textarea {
-  padding: 20px;
+  padding: 15px;
 }
 
 section#register .form-group input.form-control {
