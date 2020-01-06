@@ -700,6 +700,8 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   max-width: 115%;
 }
 
-.bothook {
-  max-width: 80%;
+@media (min-width: 576px) {
+  .bothook {
+    max-width: 80%;
+  }
 }
