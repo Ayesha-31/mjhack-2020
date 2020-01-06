@@ -23,13 +23,13 @@ function insertData(obj) {
     .then(function(response) {
       return response.json();
     })
-    .then(function(data) {
+    .then(function() {
       clearForm();
-      window.location.href = 'success.html';
+      window.location.href = './success.html?s=true';
     })
-    .catch(function(error) {
+    .catch(function() {
       clearForm();
-      window.location.href = 'error.html';
+      alert('Something went wrong, Please try again later.');
     });
 }
 
