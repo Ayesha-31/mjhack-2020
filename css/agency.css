@@ -181,8 +181,8 @@ header.masthead {
 }
 
 header.masthead .intro-text {
-  padding-top: 80px;
-  padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 80px;
 }
 
 header.masthead .intro-text .intro-lead-in {
@@ -194,17 +194,16 @@ header.masthead .intro-text .intro-lead-in {
 }
 
 header.masthead .intro-text .intro-heading {
-  font-size: 50px;
+  font-size: 54px;
   font-weight: 700;
-  line-height: 50px;
-  margin-bottom: 25px;
+  line-height: 1.25;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 120px;
-    padding-bottom: 200px;
+    padding-top: 110px;
+    padding-bottom: 100px;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: 40px;
