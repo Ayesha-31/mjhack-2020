@@ -26,10 +26,15 @@
   }
 
   .text {
+    margin-top: -5px;
+    color: $gray-400;
     font-size: 15px;
     display: inline-block;
-    font-family: monospace;
   }
+}
+
+#register-button {
+  transition: all 200ms linear;
 }
 
 @media (min-width: 576px) {

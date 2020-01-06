@@ -718,9 +718,14 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 .count-down .text {
+  margin-top: -5px;
+  color: #ced4da;
   font-size: 15px;
   display: inline-block;
-  font-family: monospace;
+}
+
+#register-button {
+  transition: all 200ms linear;
 }
 
 @media (min-width: 768px) {
