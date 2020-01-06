@@ -692,6 +692,14 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   background-color: #67b0ff;
 }
 
-.last-sponsor img {
-  max-height: 110px;
+.img-csi {
+  max-width: 80%;
+}
+
+.img-ecell {
+  max-width: 115%;
+}
+
+.bothook {
+  max-width: 80%;
 }
