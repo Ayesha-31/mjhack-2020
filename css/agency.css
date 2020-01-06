@@ -198,7 +198,6 @@ header.masthead .intro-text .intro-heading {
 @media (min-width: 768px) {
   header.masthead .intro-text {
     padding-top: 110px;
-    padding-bottom: 100px;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: 40px;
@@ -704,13 +703,32 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   text-decoration: none;
 }
 
-.count-down h1 {
-  font-size: 54px;
+.count-down {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 90%;
+  max-width: 500px;
+}
+
+.count-down .number,
+.count-down .dot {
+  font-size: 50px;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.count-down .text {
+  font-size: 15px;
+  display: inline-block;
+  font-family: monospace;
 }
 
 @media (min-width: 768px) {
-  .count-down h1 {
-    font-family: monospace;
-    font-size: 72px;
+  .count-down .number,
+  .count-down .dot {
+    font-size: 74px;
+  }
+  .count-down .text {
+    font-size: 20px;
   }
 }
