@@ -4,15 +4,30 @@
 .img-ecell {
   max-width: 115%;
 }
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-  .bothook {
-    max-width: 80%;
+.header-link {
+  color: white;
+  &:hover {
+    color: white;
+    text-decoration: none;
   }
+}
+.count-down {
+  h1 {
+    font-size: 54px;
+  }
+}
+
+@media (min-width: 576px) {
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  .count-down {
+    h1 {
+      @include mono-font;
+      font-size: 72px;
+    }
+  }
 }
 
 // Large devices (desktops, 992px and up)

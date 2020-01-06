@@ -1,9 +1,4 @@
-/*!
- * Start Bootstrap - Agency v5.2.2 (https://mjhack.netlify.com)
- * Copyright 2013-2020 CSI-MJCET
- * Licensed under MIT (https://github.com/BlackrockDigital/mjhack-2020/blob/master/LICENSE)
- */
-
+/* MJ Hack Revolution 2020 */
 body {
   overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -700,8 +695,22 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   max-width: 115%;
 }
 
-@media (min-width: 576px) {
-  .bothook {
-    max-width: 80%;
+.header-link {
+  color: white;
+}
+
+.header-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.count-down h1 {
+  font-size: 54px;
+}
+
+@media (min-width: 768px) {
+  .count-down h1 {
+    font-family: monospace;
+    font-size: 72px;
   }
 }

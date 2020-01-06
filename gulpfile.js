@@ -17,15 +17,7 @@ const uglify = require('gulp-uglify');
 const pkg = require('./package.json');
 
 // Set the banner content
-const banner = [
-  '/*!\n',
-  ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
-  ' * Copyright 2013-' + new Date().getFullYear(),
-  ' <%= pkg.author %>\n',
-  ' * Licensed under <%= pkg.license %> (https://github.com/BlackrockDigital/<%= pkg.name %>/blob/master/LICENSE)\n',
-  ' */\n',
-  '\n'
-].join('');
+const banner = ['/* MJ Hack Revolution 2020 */\n'].join('');
 
 // BrowserSync
 function browserSync(done) {

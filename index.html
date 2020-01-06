@@ -41,6 +41,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js" defer></script>
+    <script src="./js/timer.min.js" defer></script>
   </head>
 
   <body id="page-top">
@@ -140,7 +141,44 @@
           <div class="intro-heading text-uppercase">MJ Hack Revolution</div>
           <div class="my-5">
             <h4><i class="fa fa-calendar-alt"></i>&nbsp;19th January, 2020</h4>
-            <h4><i class="fa fa-map-marker-alt"></i>&nbsp;MJCET</h4>
+            <h4>
+              <a
+                href="https://www.google.co.in/maps/place/Muffakham+Jah+College+Of+Engineering+And+Technology/@17.4282648,78.440654,17z/data=!3m1!4b1!4m5!3m4!1s0x3bcb90d333154ddb:0xfcf718680e41f674!8m2!3d17.4282648!4d78.442848"
+                target="_blank"
+                class="header-link"
+              >
+                <i class="fa fa-map-marker-alt"></i>&nbsp;MJCET
+              </a>
+            </h4>
+          </div>
+          <div class="container my-5">
+            <div class="row justify-content-center px-lg-5 count-down">
+              <div class="col text-center">
+                <h1 id="days"></h1>
+                <span>Days</span>
+              </div>
+              <div class="col-1">
+                <h1>:</h1>
+              </div>
+              <div class="col text-center">
+                <h1 id="hours"></h1>
+                <span>Hours</span>
+              </div>
+              <div class="col-1">
+                <h1>:</h1>
+              </div>
+              <div class="col text-center">
+                <h1 id="minutes"></h1>
+                <span>Minutes</span>
+              </div>
+              <div class="col-1">
+                <h1>:</h1>
+              </div>
+              <div class="col text-center">
+                <h1 id="seconds"></h1>
+                <span>Seconds</span>
+              </div>
+            </div>
           </div>
           <a
             class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
@@ -237,7 +275,7 @@
             </ul>
 
             <p class="my-5"></p>
-            <h5 class="my-2 text-uppercase">Code of Conduct</h5>
+            <h5 class="my-2 text-uppercase">Code of Conduct:</h5>
             <p class="lead">
               By participating in this Hackathon event, you agree to abide by
               the following code of conduct.
@@ -367,7 +405,124 @@
             </h3>
           </div>
         </div>
-        <div class="row"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col col-lg-2 col-md-3 col-sm-6 mb-4 text-center">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-leaf fa-stack-1x fa-inverse"></i>
+              </span>
+              <h6 class="my-2">Agriculture and Rural Development</h6>
+            </div>
+            <div class="col col-lg-2 col-md-3 col-sm-6 mb-4 text-center">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-tint fa-stack-1x fa-inverse"></i>
+              </span>
+              <h6 class="my-2">Clean Water</h6>
+            </div>
+            <div class="col col-lg-2 col-md-3 col-sm-6 mb-4 text-center">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-robot fa-stack-1x fa-inverse"></i>
+              </span>
+              <h6 class="my-2">Robotics & Drones</h6>
+            </div>
+            <div class="col col-lg-2 col-md-3 col-sm-6 mb-4 text-center">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-heartbeat fa-stack-1x fa-inverse"></i>
+              </span>
+              <h6 class="my-2">Healthcare & Biomedical Devices</h6>
+            </div>
+            <div class="col col-lg-2 col-md-3 col-sm-6 mb-4 text-center">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-bolt fa-stack-1x fa-inverse"></i>
+              </span>
+              <h6 class="my-2">Energy / Renewable Energy</h6>
+            </div>
+            <div class="col col-lg-2 col-md-3 col-sm-6 mb-4 text-center">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-camera fa-stack-1x fa-inverse"></i>
+              </span>
+              <h6 class="my-2">Security & Surveillance</h6>
+            </div>
+            <div class="col col-lg-2 col-md-3 col-sm-6 mb-4 text-center">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+              </span>
+              <h6 class="my-2">Smart Vehicles</h6>
+            </div>
+            <div class="col col-lg-2 col-md-3 col-sm-6 mb-4 text-center">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-mobile-alt fa-stack-1x fa-inverse"></i>
+              </span>
+              <h6 class="my-2">Software - Mobile App Development</h6>
+            </div>
+            <div class="col col-lg-2 col-md-3 col-sm-6 mb-4 text-center">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
+              </span>
+              <h6 class="my-2">Software - Web App Development</h6>
+            </div>
+            <div class="col col-lg-2 col-md-3 col-sm-6 mb-4 text-center">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-route fa-stack-1x fa-inverse"></i>
+              </span>
+              <h6 class="my-2">Travel and Tourism</h6>
+            </div>
+            <div class="col col-lg-2 col-md-3 col-sm-6 mb-4 text-center">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-dollar-sign fa-stack-1x fa-inverse"></i>
+              </span>
+              <h6 class="my-2">Finance</h6>
+            </div>
+            <div class="col col-lg-2 col-md-3 col-sm-6 mb-4 text-center">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-flask fa-stack-1x fa-inverse"></i>
+              </span>
+              <h6 class="my-2">Life Science</h6>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col col-lg-2 col-md-3 col-sm-6 mb-4 text-center">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-trash fa-stack-1x fa-inverse"></i>
+              </span>
+              <h6 class="my-2">Waste Management</h6>
+            </div>
+            <div class="col col-lg-2 col-md-3 col-sm-6 mb-4 text-center">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-utensils fa-stack-1x fa-inverse"></i>
+              </span>
+              <h6 class="my-2">Food Technology</h6>
+            </div>
+            <div class="col col-lg-2 col-md-3 col-sm-6 mb-4 text-center">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-running fa-stack-1x fa-inverse"></i>
+              </span>
+              <h6 class="my-2">Sports & Fitness</h6>
+            </div>
+            <div class="col col-lg-2 col-md-3 col-sm-6 mb-4 text-center">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
+              </span>
+              <h6 class="my-2">Sustainable Environment</h6>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -556,12 +711,7 @@
             <h2 class="section-heading text-uppercase">Our Sponsors</h2>
           </div>
         </div>
-        <!-- <style>
-          .spon div {
-            border: 1px solid red;
-          }
-        </style> -->
-        <div class="row mt-5 align-items-center justify-content-center spon">
+        <div class="row mt-5 align-items-center justify-content-center">
           <div class="col-xl-4 col-lg-6 mx-5 text-center">
             <a href="https://gdghyderabad.in/">
               <img
