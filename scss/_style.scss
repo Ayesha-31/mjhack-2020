@@ -11,20 +11,17 @@
     text-decoration: none;
   }
 }
-
 .count-down {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   width: 90%;
   max-width: 500px;
-
   .number,
   .dot {
     font-size: 50px;
     font-family: monospace;
     font-weight: bold;
   }
-
   .text {
     margin-top: -5px;
     color: $gray-400;
@@ -32,14 +29,17 @@
     display: inline-block;
   }
 }
-
 #register-button {
   transition: all 200ms linear;
 }
-
-@media (min-width: 576px) {
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
-
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .count-down {
@@ -52,12 +52,4 @@
       font-size: 20px;
     }
   }
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
 }

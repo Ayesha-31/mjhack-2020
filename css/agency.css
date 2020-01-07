@@ -728,6 +728,15 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   transition: all 200ms linear;
 }
 
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 @media (min-width: 768px) {
   .count-down .number,
   .count-down .dot {
