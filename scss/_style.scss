@@ -45,7 +45,7 @@
   background: #f7f7f7;
   margin-bottom: 30px;
   &::after {
-    content: '';
+    content: "";
     display: block;
     height: 0;
     width: 100%;
@@ -83,7 +83,7 @@
 }
 .lazyloaded {
   opacity: 1;
-  transition: opacity 300ms;
+  transition: opacity 150ms;
 }
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
