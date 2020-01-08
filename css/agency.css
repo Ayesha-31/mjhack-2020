@@ -746,7 +746,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 .ration-container::after {
-  content: '';
+  content: "";
   display: block;
   height: 0;
   width: 100%;
@@ -792,7 +792,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 .lazyloaded {
   opacity: 1;
-  transition: opacity 300ms;
+  transition: opacity 150ms;
 }
 
 @media (min-width: 768px) {
