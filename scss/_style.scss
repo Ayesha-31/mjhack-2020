@@ -32,14 +32,6 @@
 #register-button {
   transition: all 200ms linear;
 }
-.hidden {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
 .ration-container {
   position: relative;
   background: #f7f7f7;
