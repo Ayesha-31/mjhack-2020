@@ -1,9 +1,5 @@
 # MJ Hack Revolution 2020
 
-## Deploy Status
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6a41563f-5852-415e-a8c3-54c284643a53/deploy-status)](https://app.netlify.com/sites/mjhack/deploys)
-
 ## Usage
 
 ### Basic Usage
