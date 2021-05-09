@@ -1,4 +1,4 @@
-var URL = 'https://mjhackrevolution-v2.firebaseio.com/participants.json';
+var URL = 'https://____.firebaseio.com/participants.json';
 var registerForm = document.getElementById('register-form');
 var registerButton = document.getElementById('register-button');
 var teamNames = document.getElementById('team-names');
