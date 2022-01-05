@@ -3,7 +3,7 @@ var hoursContainer = document.querySelector('#hours');
 var minutesContainer = document.querySelector('#minutes');
 var secondsContainer = document.querySelector('#seconds');
 
-var eventDate = new Date('Jan 19, 2020 07:00:00').getTime();
+var eventDate = new Date('Jan 8, 2022 07:00:00').getTime();
 
 function timer() {
   var currentDate = new Date().getTime();
